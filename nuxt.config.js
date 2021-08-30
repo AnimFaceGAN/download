@@ -6,15 +6,15 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - ganimation_lp',
-    title: 'ganimation_lp',
+    titleTemplate: '%s - download',
+    title: 'download',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/download/static/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/download/favicon.ico' }
     ]
   },
 
@@ -63,6 +63,6 @@ export default {
   },
 
   router: {
-    base: ''
+    base: '/download/'
   },
 }
