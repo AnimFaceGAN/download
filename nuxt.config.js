@@ -63,6 +63,6 @@ export default {
   },
 
   router: {
-    base: '/download/'
+    base: ''
   },
 }
