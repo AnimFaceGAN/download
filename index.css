@@ -1,4 +1,9 @@
 /* deafult */
+.btn {
+    background-color: #ff8800c0 !important;
+    color: white !important;
+    padding-bottom: 10px !important;
+}
 
 /* header */
 header {
