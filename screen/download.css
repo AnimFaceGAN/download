@@ -1,0 +1,15 @@
+.btn {
+    background-color: #ff8800c0 !important;
+    color: white !important;
+    padding-bottom: 10px !important;
+}
+
+.download-section { 
+    width: 1000px;
+    margin: auto;
+    text-align: left;
+ }
+.douwnload-button { 
+    font-size: 6px;
+    margin-top: 40px; 
+}

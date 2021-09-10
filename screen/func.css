@@ -1,54 +1,17 @@
 /*---------- deafult ----------*/
-* {
-
-}
 .btn {
     background-color: #ff8800c0 !important;
     color: white !important;
     padding-bottom: 10px !important;
 }
+html, body { height: 100%; }
 
-/*--------- header ----------*/
-.header-container { display: flex; }
-.logo { max-width: 200px; }
-
-/* gnavi */
-.gnavi {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 15px 0px 0px 0px;
-}
-.gnavi li a {
-    display: block;
-    padding:10px 30px;
-    text-decoration: none;
-    color: #333;
-}
-.gnavi li { margin-bottom:20px; }
-.gnavi li a { position: relative; }
-.gnavi li.active a,
-.gnavi li a:hover { color:#FF8800; }
-.gnavi li a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    width: 80%;
-    height: 2px;
-    background:#FF8800;
-    transition: all .3s;
-    transform: scale(0, 1);
-    transform-origin: center top;
-}
-.gnavi li.active a::after,
-.gnavi li a:hover::after { transform: scale(1, 1); }
+/* header */
 
 /*---------- main ----------*/
 .main-container {
     text-align: center;
+    height: 100%;
 }
 .hero-section {
     height: 100%;
@@ -57,8 +20,11 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    padding: 100px;
     background-color: rgba(0,0,0,0.5);
   background-blend-mode: darken;
+}
+.product-container {
 }
 .product-icon {
     margin: auto;
@@ -86,6 +52,50 @@
 }
 
 .space { margin: 70px; }
+
+/*  navi */
+.gnavi{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 0 50px 0;
+    list-style: none;
+}
+.gnavi li a{
+    display: block;
+    padding:10px 30px;
+    text-decoration: none;
+    color: #333;
+}
+.gnavi li{
+    margin-bottom:20px;
+}
+.gnavi li a{
+	position: relative;
+}
+.gnavi li.active a,
+.gnavi li a:hover{
+	color:#FF8800;
+}
+.gnavi li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background:#FF8800;
+    transition: all .3s;
+    transform: scale(0, 1);
+    transform-origin: center top;
+}
+.gnavi li.active a::after,
+.gnavi li a:hover::after {
+    transform: scale(1, 1);
+}
+
+/* download */
+.download-section { font-size: max(35px, 2vw); }
+.douwnload-button { margin-top: 40px; }
 
 /*---------- footer ----------*/
 footer { text-align: center; }
