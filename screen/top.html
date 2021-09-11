@@ -1,30 +1,117 @@
+<!---------- head ---------->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
     <link rel="stylesheet" href="top.css">
-   
-    <!-- Bootstrap関連 -->
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-   
     <!-- [if lt IE 9] -->
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-    <!-- [endif] -->
-    <script src="main.js"></script>
 </head>
 
-<div class="hero-section">
-    <div class="product-container">
-        <div class="product-icon">
-            <img src="../imgs/logo.svg" class="img-fluid" alt="product icon">
+<!---------- main ---------->
+<div id="hero-section">
+    <div id="product-container">
+        <!-- float:left -->
+        <div id="disp-left">
+            <img src="../imgs/logo.svg" id="icon" alt="product icon">
         </div>
-        <div class="product-reading">ガニメーション</div>
-        <div class="product-description">
-            <p class="main-description">顔イラストがアバターに</p>
-            <p class="sub-description">1枚のイラストで好きなキャラクターになりきろう</p>
+
+        <!-- float:right -->
+        <div id="disp-right">
+            <!---- language select bar ---->
+            <div>
+                <ul id="language-bar">
+                    <li id="japanese" class="active" onclick="changeLanguage(this);"><a href="#" class="disabled">日本語</a></li>
+                    <li id="english" class="inactive" onclick="changeLanguage(this);"><a href="#" class="disabled">English</a></li>
+                    <li id="chinese" class="inactive" onclick="changeLanguage(this);"><a href="#" class="disabled">中文</a></li>
+                </ul>
+            </div>
+
+            <div id="product-description">
+                <!---- Japanese ---->
+                <div id="japanese-description">
+                    <div class="title">Ganimation</div><br>
+                    <div class="main-description">顔イラストでVtuber!<br></div>
+                    <div class="sub-description">
+                        用意するのは1枚のイラストだけであとはAIにおまかせ.<br>
+                        さあ,みんなも簡単にVtuber気分になろう !
+                    </div>
+                    <button class="download-btn" onclick="window.open('https://drive.google.com/file/d/1_LwXFVwz85g6T6CV-kqXaWQYMxo8U23n/view?usp=sharing','_blank')">windows版のダウンロード</button>
+                    <button class="github-btn" onclick="window.open('https://github.com/AnimFaceGAN/Ganimation','_blank')">github</button>
+                    <div class="space"></div>
+                </div>
+
+                <!---- English ---->
+                <div id="english-description" style="display:none">
+                    <div class="title">Ganimation</div><br>
+                    <div class="main-description">Vtuber with face illustration!<br></div>
+                    <div class="sub-description">
+                        Only one illustration is prepared, and the rest is left to AI.<br>
+                        Now everyone can easily feel like a Vtuber !
+                    </div>
+                    <button class="download-btn" onclick="window.open('https://drive.google.com/file/d/1_LwXFVwz85g6T6CV-kqXaWQYMxo8U23n/view?usp=sharing','_blank')">
+                        windows version download</button>
+                    <button class="github-btn" onclick="window.open('https://github.com/AnimFaceGAN/Ganimation','_blank')">github</button>
+                    <div class="space"></div>
+                </div>
+
+                <!---- Chinese ---->
+                <div id="chinese-description" style="display:none">
+                    <div class="title">Ganimation</div><br>
+                    <div class="main-description">Vtuber带有人脸插图！<br></div>
+                    <div class="sub-description">
+                        只准备了一张插画，剩下的交给AI.<br>
+                        现在每个人都可以轻松地感觉自己像个Vtuber！
+                    </div>
+                    <button class="download-btn" onclick="window.open('https://drive.google.com/file/d/1_LwXFVwz85g6T6CV-kqXaWQYMxo8U23n/view?usp=sharing','_blank')">Windows版本下载</button>
+                    <button class="github-btn" onclick="window.open('https://github.com/AnimFaceGAN/Ganimation','_blank')">github</button>
+                    <div class="space"></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
+<!---------- script ---------->
+<script>
+    function resizeAction() { 
+        let width = document.documentElement.clientWidth;
+        let leftId = document.getElementById('disp-left');
+        let rightId = document.getElementById('disp-right');
+        if(width<1100){
+            leftId.style.float = 'none';
+            leftId.style.width = '100%';
+            leftId.style.height = '40%';
+            rightId.style.float = 'none';
+            rightId.style.width = '100%';
+            rightId.style.height = '60%';
+        }
+        else{
+            leftId.style.float = 'left';
+            leftId.style.width = '50%';
+            leftId.style.height = '100%';
+            rightId.style.float = 'right';
+            rightId.style.width = '50%';
+            rightId.style.height = '100%';
+        }
+    }
+    $(window).resize(resizeAction);
+
+    var showLanguage = 'japanese'
+    function changeLanguage(obj){
+        //change active navi
+        if(obj.className=="inactive"){
+        let activatedClass = document.getElementsByClassName("active");
+        $(activatedClass).removeClass("active").addClass("inactive");
+        $(obj).removeClass("inactive").addClass("active");
+        //change lang
+        let hiddenLangId = document.getElementById(showLanguage + '-description');
+        let showLangId = document.getElementById(obj.id + '-description');
+        showLanguage = obj.id;
+        hiddenLangId.style.display = 'none';
+        showLangId.style.display = 'block';
+        }
+    }
+</script>

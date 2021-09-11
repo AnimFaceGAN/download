@@ -1,77 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
+<!---------- head ---------->
 <head>
     <meta charset="utf-8">
     <link rel="icon" href="imgs/favicon.ico">
-    <title>ganimation ダウンロード</title>
+    <title>ganimation</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Ganimationのダウンロード">
-    <!-- <meta name="viewport" content="width=1200> --> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
     <link rel="stylesheet" href="index.css">
-
-    <!-- Bootstrap関連 -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-
     <!-- [if lt IE 9] -->
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-    <!-- [endif] -->
-    <script src="main.js"></script>
 </head>
 
-<!----- header----->
-<header class="header-container">
-    <div class="logo">
-        <img src="imgs/logo.png" class="img-fluid" alt="logo">
-    </div>
-    <div class="gnavi-section">
-        <ul class="gnavi">
-            <li id="top" class="active" onclick="changeFrame(this);"><a href="#" class="disabled">トップ</a></li>
-            <li id="func" class="inactive" onclick="changeFrame(this);"><a href="#" class="disabled">機能</a></li>
-            <li id="news" class="inactive" onclick="changeFrame(this);"><a href="#" class="disabled">ニュース</a></li>
-            <li id="download" class="inactive" onclick="changeFrame(this);"><a href="#" class="disabled">ダウンロード</a></li>
-        </ul>
-    </div>
-</header>
-<!----- /header ----->
-
+<!---------- body ---------->
 <body>
 <!----- main ----->
-<div class="main-container">  
-    <div class="frame-section">
-       <iframe src="screen/top.html" scrolling="no" width=100% height=1000px></iframe>
+<div id="main-container">  
+    <div id="frame-section">
+       <iframe src="screen/top.html" scrolling="no" width="100%" height="100%"></iframe>
     </div>
-
-    <div class="space"></div>
-    <div class="git-section">
-        githubは
-        <a href="https://github.com/AnimFaceGAN/Ganimation" target="_blank">こちら</a>
-    </div>
-
-    <!-- footer -->
-    <hr><footer>©2021- Ganimation</footer>
 </div>
- <!----- /main ----->
+</body>
+</html>
 
-<!----- script ----->
+<!---------- script ---------->
 <script>
-    function resizeAction() { 
-        let width = document.documentElement.clientWidth;
-        if(width<650){
-            $('header').removeClass('header-container');
-        }
-        else{
-            $('header').addClass('header-container');
-        }
-    }
-    $(window).resize(resizeAction);
-
-    var downloadLocate = $('.download-section').offset().top;
-    $('.menu-download').click(function(){
-        $(window).scrollTop(downloadLocate);
+    //display max window
+    $(window).on('load resize',function(){
+    $('#main-container').css('width',  $(window).width());
+    $('#main-container').css('height',  $(window).height());
     });
 
     function changeFrame(obj){
@@ -86,6 +48,3 @@
         }
     }
 </script>
-<!----- /script ----->
-</body>
-</html>
