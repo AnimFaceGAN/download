@@ -33,16 +33,30 @@
     margin-right: auto;
     margin-left: auto;
 }
-.title {
-    width: 60%;
+.title-wide {
+    width: 80%;
     margin-bottom: 70px;
 }
-.main-description {
+.title-narrow {
+    width: 50%;
+    margin-bottom: 30px;
+}
+.main-description-wide {
     font-size: 30px;
     font-weight: 500;  
+    margin-bottom: 15px;
 }
-.sub-description {
+.main-description-narrow {
+    font-size: 23px;
+    font-weight: 500;  
+    margin-bottom: 15px;
+}
+.sub-description-wide {
     font-size: 25px;
+    font-weight: 200;  
+}
+.sub-description-narrow {
+    font-size: 18px;
     font-weight: 200;  
 }
 .download-btn {
