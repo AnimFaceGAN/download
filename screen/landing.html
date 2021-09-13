@@ -116,7 +116,9 @@
         }
     }
     $(window).resize(resizeAction);
-
+    window.onload = function(){
+        resizeAction;
+    }
 
     var showLanguage = 'japanese'
     function changeLanguage(obj){
