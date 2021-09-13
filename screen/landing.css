@@ -126,10 +126,10 @@
 #language-bar li.active a::after,
 #language-bar li a:hover::after { transform: scale(1, 1); }
 
-@media screen and(max-width: 960px) {
+@media screen and(max-width: 960px) { /* tablet */
+}
+@media screen and(max-width: 480px) { /* smartphone*/
     #disp-right {
     background-color: teal;
     }
     }
-@media screen and(min-width: 960px) {
-}
