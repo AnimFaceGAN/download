@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
-    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="index.css">
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- [if lt IE 9] -->
@@ -39,6 +39,7 @@
                     </div>
                     <button class="download-btn" onclick="window.open('https://drive.google.com/file/d/1_LwXFVwz85g6T6CV-kqXaWQYMxo8U23n/view?usp=sharing','_blank')">windows版のダウンロード</button>
                     <button class="github-btn" onclick="window.open('https://github.com/AnimFaceGAN/Ganimation','_blank')">github</button>
+                    <div class="homepage-description"><a href="../home/index.html">ホームページ</a></div>
                     <div class="space"></div>
                 </div>
 
@@ -75,6 +76,7 @@
 
 <!---------- script ---------->
 <script>
+    /*----- resize action (responsible) -----*/
     let leftId = document.getElementById('disp-left');
     let rightId = document.getElementById('disp-right');
     var titleClass = document.getElementsByClassName('title-wide');
@@ -120,9 +122,10 @@
         resizeAction();
     }
 
+    /*----- language selection -----*/
     var showLanguage = 'japanese'
     function changeLanguage(obj){
-        //change active navi
+        //update active and inactive navi
         if(obj.className=='inactive'){
         let activatedClass = document.getElementsByClassName('active');
         $(activatedClass).removeClass('active').addClass('inactive');
