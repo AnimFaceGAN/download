@@ -1,0 +1,246 @@
+/*---------- LAND ----------*/
+.disp-left {
+   float: left;
+   width: 50%;
+   height: 100%;
+   background: url(../imgs/home.png);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   background-color: rgba(0,0,0,0);}
+
+.disp-right {
+   float: right;
+   width: 50%;
+   height: 100%;
+   .product-description {
+      width: 85%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      img {
+         width: 80%;
+         margin-bottom: 70px;}
+      .main-description {
+         font-size: 30px;
+         font-weight: 500;  
+         margin-bottom: 15px;}
+      .sub-description {
+         font-size: 25px;
+         font-weight: 200;}
+      .to-download-btn {
+         width: 90%;
+         background-color: #ff880094;
+         border: none;
+         color: white;
+         font-size: 20px;
+         font-weight: 700; 
+         margin-top: 30px;
+         padding: 10px;}
+      .to-download-btn:hover {
+         background-color: #0099b2;
+         border: none;}  
+      .github-btn {
+         background-color: #8d8d8d94;
+         border: none;
+         color: white;
+         font-size: 20px;
+         font-weight: 700;
+         margin-top: 30px;
+         padding: 10px;
+         width: 90%;}
+      .github-btn:hover {
+         background-color: #0099b2;
+         border: none;}
+      .space {
+         padding-top: 200px;}}}
+
+@media screen and (max-width: 1100px) {
+   /* TABLET(541-1100px) */
+   .disp-left {
+      float: none;
+      width: 100%;
+      height: 40%;}
+   .disp-right {
+      float: none;
+      width: 100%;
+      height: 60%;
+      .product-description {
+         img {
+            width: 50%;
+            margin-bottom: 10px;}
+         .main-description {
+            font-size: 25px;}
+         .sub-description {
+            font-size: 20px;}
+         .space {
+            padding-top: 20px;}}}}
+@media screen and (max-width: 540px) {
+   /* SMART PHONE(376-540px) */
+   .disp-right {
+      .product-description {
+         .main-description {
+            font-size: 20px;}
+         .sub-description {
+            font-size: 15px;}
+         .to-download-btn {
+            font-size: 15px;
+            margin-top: 10px;
+            padding: 5px;}
+         .github-btn {
+            font-size: 15px;
+            margin-top: 10px;
+            padding: 5px;}}}}
+@media screen and (max-width: 375px) {
+   /* SMART PHONE(0-375px) */
+   .disp-right {
+      .product-description {
+         .main-description {
+            font-size: 18px;}
+         .sub-description {
+            font-size: 14px;}
+         .to-download-btn {
+            margin-top: 10px;
+            font-size: 14px;
+            margin-bottom: 5px;}
+         .github-btn {
+            margin-top: 10px;
+            font-size: 15px;}}}}
+
+/*---------- ABOUT ----------*/
+.about-title {
+   margin-top: 100px;}
+
+.feature-block {
+   width: 50%;
+   height: 350px;
+   background-color: rgba(102, 102, 102, 0.7);
+   display: flex;
+   margin: 80px auto;
+   .feature-img {
+      float: left;
+      width: 50%;
+      img {
+         width: 100%;
+         height: 100%;}}
+   .feature-desc {
+      float: right;
+      width: 50%;
+      margin: auto;
+      padding: 20px;
+      text-align: left;
+      b {
+         font-size: 25px;}
+      p {
+         font-size: 18px;}}}
+
+@media screen and (max-width: 1100px) {
+   /* TABLET(541-1100px) */
+   .feature-block {
+      width: 90%;
+      height: 350px;
+      background-color: rgba(102, 102, 102, 0.7);
+      display: flex;
+      margin: 80px auto;
+      .feature-img {
+         float: left;
+         width: 50%;
+         img {
+            width: 100%;
+            height: 100%;}}
+      .feature-desc {
+         float: right;
+         width: 50%;
+         margin: auto;
+         padding: 10px;
+         text-align: left;
+         b {
+            font-size: 22px;}
+         p {
+            font-size: 15px;}}}}
+@media screen and (max-width: 540px) {
+   /* SMART PHONE(376-540px) */
+   .feature-block {
+      width: 80%;
+      background-color: rgba(255, 255, 255, 0);
+      display: block;
+      margin: auto;
+      .feature-img {
+         width: 100%;
+         margin-top: 40px;
+         img {
+            width: 80%;
+            height: 300px;}}
+      .feature-desc {
+         width: 90%;
+         text-align: center;
+         b {
+            font-size: 20px;}
+         p {
+            font-size: 13px;
+            text-align: left;}}}}
+@media screen and (max-width: 375px) {
+   /* SMART PHONE(0-375px) */
+   .about-title {
+      h1 {
+         font-size: 26px;}
+      h4 {
+         font-size: 12px;}}
+
+   .feature-block {
+      width: 80%;
+      background-color: rgba(255, 255, 255, 0);
+      display: block;
+      margin: auto;
+      .feature-img {
+         width: 100%;
+         margin-top: 40px;
+         img {
+            width: 80%;
+            height: 250px;}}
+      .feature-desc {
+         b {
+            font-size: 15px;}
+         p {
+            font-size: 12px;
+            text-align: left;}}}}
+
+/*---------- NEWS ----------*/
+.news-list {
+   width: 60%;
+   height: 90%;
+   background-color: rgba(102, 102, 102, 0.7);
+   margin: auto;
+   margin-top: 50px;
+   text-align: left;
+   .a-news {
+      margin: 10px;
+   }}
+
+/*---------- DOWNLOAD ----------*/
+.download-logo {
+   margin-top: 30px;
+   img {
+      width: 200px;
+      height: 200px;
+   }}
+
+.download-btn {
+   width: 300px;
+   background-color: #ff880094;
+   border: none;
+   color: white;
+   font-size: 20px;
+   margin: 20px;
+   padding: 10px;}
+.download-btn:hover {
+   background-color: #0099b2;}
+
+.spec-desc {
+   font-size: 15px;
+   margin-top: 40px;
+   b {
+      font-size: 18px;}}

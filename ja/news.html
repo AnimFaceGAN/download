@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<!---------- head ---------->
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../imgs/favicon.ico">
+    <title>Ganimation NEWS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Ganimationのニュース">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../components/default.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- [if lt IE 9] -->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+</head>
+
+<!---------- body ---------->
+<body>
+    <!----- header ----->
+    @@include('../components/header.html')
+    <div id="test"></div>
+    <!----- main ----->
+    <div id="news-container">
+        <ul class="news-list">
+            
+            <li class="a-news" data-news="20210915">2021/9/15 : testtesttest</li>
+            <li class="a-news" data-news="20210914">2021/9/14 : testtesttest</li>
+        </ul>
+    </div>
+
+    <!----- footer ----->
+    @@include('../components/footer.html')
+</body>
+</html>
+
+<!---------- script ---------->
+<script>
+    //display max window
+    $(window).on('load resize',function(){
+    $('#news-container').css('width',  $(window).width());
+    $('#news-container').css('height',  $(window).height());
+    });
+
+    $(function(){
+        $('#test').load('land.html body');
+    });
+</script>

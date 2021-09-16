@@ -1,51 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
-<!---------- head ---------->
-<head>
-    <meta charset="utf-8">
-    <link rel="icon" href="imgs/favicon.ico">
-    <title>ganimation</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Ganimationのダウンロード">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css -->
-    <link rel="stylesheet" href="index.css">
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- [if lt IE 9] -->
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-</head>
-
-<!---------- body ---------->
-<body>
-<!----- main ----->
-<div id="main-container">
-    <div class="homepage-description"><a href="home/index.html">ホームページ</a></div>  
-    <div id="frame-section">
-       <iframe src="landing/index.html" scrolling="no" width="100%" height="100%"></iframe>
-    </div>
-</div>
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="imgs/favicon.ico">
+        <title>Ganimation</title>
+        <meta name="description" content="Ganimationのダウンロード">
+        <meta http-equiv="refresh" content="0;url=ja/land.html">
+    </head>
 </html>
-
-<!---------- script ---------->
-<script>
-    //display max window
-    $(window).on('load resize',function(){
-    $('#main-container').css('width',  $(window).width());
-    $('#main-container').css('height',  $(window).height());
-    });
-
-    function changeFrame(obj){
-        //change active navi
-        if(obj.className=="inactive"){
-        let activatedClass = document.getElementsByClassName("active");
-        $(activatedClass).removeClass("active").addClass("inactive");
-        $(obj).removeClass("inactive").addClass("active");
-        //change page
-        let pageUrl = 'screen/' + obj.id + '.html';
-        frames[0].location.href = pageUrl;
-        }
-    }
-</script>
