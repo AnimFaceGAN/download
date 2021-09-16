@@ -1,3 +1,3 @@
 # Ganimationのダウンロードページ
 
-url : https://animfacegan.github.io/download/
+url : https://animfacegan.github.io/homepage/
