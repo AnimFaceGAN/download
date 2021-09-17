@@ -6,6 +6,7 @@
     position: absolute;       
     animation: fadeIn 0.5s ease 0.0s 1 normal;
     position: fixed;
+    z-index: 100; // header:50  news page:10 
     .modal-main {
         width: 60%;
         min-height: 80vh;

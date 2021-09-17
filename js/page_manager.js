@@ -36,6 +36,11 @@ function changePage(obj) {
         mainPartId.innerHTML = '<download-page></download-page>';
 }
 
+function goDownloadPage() {
+    let mainPartId = document.getElementById('main');
+    mainPartId.innerHTML = '<download-page></download-page>';
+}
+
 window.onload = function(){
     lang = 'ja';
     document.getElementById('main').innerHTML = '<land-page></land-page>';

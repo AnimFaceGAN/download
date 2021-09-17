@@ -7,6 +7,7 @@
   -webkit-animation: fadeIn 0.5s ease 0.0s 1 normal;
           animation: fadeIn 0.5s ease 0.0s 1 normal;
   position: fixed;
+  z-index: 100;
   /* mobile sideways */
 }
 

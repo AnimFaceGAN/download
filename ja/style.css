@@ -325,6 +325,7 @@
           flex: 1;
   min-height: 90vh;
   position: relative;
+  z-index: 10;
   /* mobile sideways */
 }
 
