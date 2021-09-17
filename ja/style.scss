@@ -130,7 +130,6 @@
    min-height: 180vh;
    .about-title {
       margin-top: 100px;}
-
    .feature-block {
       width: 50%;
       height: 350px;
@@ -158,31 +157,15 @@
       /* tablet(541-1100px) */
       .feature-block {
          width: 90%;
-         height: 350px;
-         background-color: rgba(102, 102, 102, 0.7);
-         display: flex;
-         margin: 80px auto;
-         .feature-img {
-            float: left;
-            width: 50%;
-            img {
-               width: 100%;
-               height: 100%;}}
          .feature-desc {
-            float: right;
-            width: 50%;
-            margin: auto;
             padding: 10px;
-            text-align: left;
             b {
                font-size: 22px;}
             p {
                font-size: 15px;}}}}
    @media screen and (max-width: 540px) {
       /* mobile(376-540px) */
-      .about-container {
-         min-height: 220vh;}
-
+      min-height: 220vh;
       .feature-block {
          width: 80%;
          background-color: rgba(255, 255, 255, 0);
@@ -204,32 +187,19 @@
                text-align: left;}}}}
    @media screen and (max-width: 375px) {
       /* mobile(0-375px) */
-      .about-container {
-         min-height: 250vh;}
-
+      min-height: 250vh;
       .about-title {
          h1 {
             font-size: 26px;}
          h4 {
             font-size: 12px;}}
-
       .feature-block {
-         width: 80%;
-         background-color: rgba(255, 255, 255, 0);
-         display: block;
-         margin: auto;
          .feature-img {
-            width: 100%;
-            margin-top: 40px;
             img {
-               width: 80%;
                height: 200px;}}
          .feature-desc {
             b {
-               font-size: 15px;}
-            p {
-               font-size: 12px;
-               text-align: left;}}}}
+               font-size: 15px;}}}}
             
    /* mobile sideways */
    @media screen and (orientation: landscape) {
