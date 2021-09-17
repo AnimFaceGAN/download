@@ -1,4 +1,4 @@
-/*---------- LAND ----------*/
+/*--------------- LAND ------------------------------------------------------*/
 .land-container {
    flex: 1;
    min-height: 100vh;
@@ -124,9 +124,10 @@
          .disp-right {
             height: 65vw;}}}}
    
-/*---------- ABOUT ----------*/
+/*--------------- ABOUT -----------------------------------------------------*/
 .about-container {
-   height: 180vh;
+   flex: 1;
+   min-height: 180vh;
    .about-title {
       margin-top: 100px;}
 
@@ -180,7 +181,7 @@
    @media screen and (max-width: 540px) {
       /* mobile(376-540px) */
       .about-container {
-         height: 220vh;}
+         min-height: 220vh;}
 
       .feature-block {
          width: 80%;
@@ -192,7 +193,7 @@
             margin-top: 40px;
             img {
                width: 80%;
-               height: 300px;}}
+               height: 250px;}}
          .feature-desc {
             width: 90%;
             text-align: center;
@@ -204,7 +205,7 @@
    @media screen and (max-width: 375px) {
       /* mobile(0-375px) */
       .about-container {
-         height: 250vh;}
+         min-height: 250vh;}
 
       .about-title {
          h1 {
@@ -222,7 +223,7 @@
             margin-top: 40px;
             img {
                width: 80%;
-               height: 250px;}}
+               height: 200px;}}
          .feature-desc {
             b {
                font-size: 15px;}
@@ -233,13 +234,16 @@
    /* mobile sideways */
    @media screen and (orientation: landscape) {
       @media screen and (max-width: 1100px) {
-      .disp-left {
-         min-height: 35vw;}
-         
-      .disp-right {
-         height: 65vw;}}}}
+         /* tablet(541-1100px) */
+         min-height: 180vw;}
+      @media screen and (max-width: 540px) {
+         /* mobile(376-540px) */
+         min-height: 220vw;}
+      @media screen and (max-width: 375px) {
+         /* mobile(0-375px) */
+         min-height: 250vw;}}}
 
-/*---------- NEWS ----------*/
+/*--------------- NEWS ------------------------------------------------------*/
 .news-list {
    width: 60%;
    height: 90%;
@@ -251,7 +255,7 @@
       margin: 10px;
    }}
 
-/*---------- DOWNLOAD ----------*/
+/*--------------- DOWNLOAD --------------------------------------------------*/
 .download-container {
    flex: 1;
    min-height: 100vh;
