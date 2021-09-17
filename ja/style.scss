@@ -301,7 +301,10 @@
       font-size: 15px;
       margin-top: 40px;
       b {
-         font-size: 18px;}}
+         font-size: 18px;}
+      p {
+         margin-top: 5px;
+      }}
 
    @media screen and (max-width: 1100px) {
       /* tablet(541-1100px) */}
@@ -314,9 +317,13 @@
             height: 100px;}}
       .download-btn {
          width: 200px;
-         font-size: 15px;
+         font-size: 13px;
          margin: 20px;
-         padding: 5px;}}
+         padding: 5px;}
+      .spec-desc {
+         font-size: 16px;
+         b {
+            font-size: 17px;}}}
    @media screen and (max-width: 375px) {
       /* mobile(0-375px) */
       .spec-desc {
@@ -327,7 +334,7 @@
 
    /* mobile sideways */
    @media screen and (orientation: landscape) {
-      @media screen and (max-width: 1100px) {
+      @media screen and (max-width: 823px) and (max-height: 540px) {
          .download-logo {
             margin-top: 50px;
             img {
@@ -338,7 +345,9 @@
                margin: 20px;
                padding: 5px;}
             .spec-desc {
-               font-size: 13px;
-               margin-top: 20px;
+               font-size: 11px;
+               margin-top: 5px;
                b {
-                  font-size: 15px;}}}}}
+                  font-size: 13px;}}}
+      @media screen and (max-width: 731px) and (max-height: 411px) {}
+      @media screen and (max-width: 640px) and (max-height: 360px) {}}}

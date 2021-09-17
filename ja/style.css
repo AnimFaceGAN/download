@@ -458,6 +458,10 @@
   font-size: 18px;
 }
 
+.download-container .spec-desc p {
+  margin-top: 5px;
+}
+
 @media screen and (max-width: 1100px) {
   .download-container {
     /* tablet(541-1100px) */
@@ -477,9 +481,15 @@
   }
   .download-container .download-btn {
     width: 200px;
-    font-size: 15px;
+    font-size: 13px;
     margin: 20px;
     padding: 5px;
+  }
+  .download-container .spec-desc {
+    font-size: 16px;
+  }
+  .download-container .spec-desc b {
+    font-size: 17px;
   }
 }
 
@@ -496,7 +506,7 @@
   }
 }
 
-@media screen and (orientation: landscape) and (max-width: 1100px) {
+@media screen and (orientation: landscape) and (max-width: 823px) and (max-height: 540px) {
   .download-container .download-logo {
     margin-top: 50px;
   }
@@ -510,11 +520,11 @@
     padding: 5px;
   }
   .download-container .spec-desc {
-    font-size: 13px;
-    margin-top: 20px;
+    font-size: 11px;
+    margin-top: 5px;
   }
   .download-container .spec-desc b {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */
