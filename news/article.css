@@ -48,11 +48,11 @@
   width: 80%;
   min-height: 70vh;
   color: #353535;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .modal-bg .modal-main .modal-desc .date {
