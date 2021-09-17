@@ -214,16 +214,18 @@
          min-height: 250vw;}}}
 
 /*--------------- NEWS ------------------------------------------------------*/
-.news-list {
-   width: 60%;
-   height: 90%;
-   background-color: rgba(102, 102, 102, 0.7);
-   margin: auto;
-   margin-top: 50px;
-   text-align: left;
-   .a-news {
-      margin: 10px;
-   }}
+.news-container {
+   flex: 1;
+   min-height: 100vh;
+   .news-list {
+      width: 60%;
+      min-height: 90vh;
+      background-color: rgba(102, 102, 102, 0.404);
+      margin: auto;
+      margin-top: 50px;
+      text-align: left;
+      .a-news {
+         margin: 10px;}}}
 
 /*--------------- DOWNLOAD --------------------------------------------------*/
 .download-container {

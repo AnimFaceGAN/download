@@ -319,16 +319,23 @@
 }
 
 /*--------------- NEWS ------------------------------------------------------*/
-.news-list {
+.news-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 100vh;
+}
+
+.news-container .news-list {
   width: 60%;
-  height: 90%;
-  background-color: rgba(102, 102, 102, 0.7);
+  min-height: 90vh;
+  background-color: rgba(102, 102, 102, 0.404);
   margin: auto;
   margin-top: 50px;
   text-align: left;
 }
 
-.news-list .a-news {
+.news-container .news-list .a-news {
   margin: 10px;
 }
 
