@@ -157,7 +157,7 @@
     font-size: 18px;
   }
   .land-container .disp-right .product-description .sub-description {
-    font-size: 13px;
+    font-size: 12px;
   }
   .land-container .disp-right .product-description .to-download-btn {
     margin-top: 10px;
@@ -360,18 +360,19 @@
       -ms-flex: 1;
           flex: 1;
   min-height: 100vh;
+  /* mobile sideways */
 }
 
-.download-logo {
+.download-container .download-logo {
   margin-top: 100px;
 }
 
-.download-logo img {
+.download-container .download-logo img {
   width: 200px;
   height: 200px;
 }
 
-.download-btn {
+.download-container .download-btn {
   width: 300px;
   background-color: #ff880094;
   border: none;
@@ -381,33 +382,37 @@
   padding: 10px;
 }
 
-.download-btn:hover {
+.download-container .download-btn:hover {
   background-color: #0099b2;
 }
 
-.spec-desc {
+.download-container .spec-desc {
   font-size: 15px;
   margin-top: 40px;
 }
 
-.spec-desc b {
+.download-container .spec-desc b {
   font-size: 18px;
 }
 
 @media screen and (max-width: 1100px) {
-  /* TABLET(541-1100px) */
+  .download-container {
+    /* tablet(541-1100px) */
+  }
 }
 
 @media screen and (max-width: 540px) {
-  /* SMART PHONE(376-540px) */
-  .download-logo {
+  .download-container {
+    /* mobile(376-540px) */
+  }
+  .download-container .download-logo {
     margin-top: 80px;
   }
-  .download-logo img {
+  .download-container .download-logo img {
     width: 100px;
     height: 100px;
   }
-  .download-btn {
+  .download-container .download-btn {
     width: 200px;
     font-size: 15px;
     margin: 20px;
@@ -416,6 +421,37 @@
 }
 
 @media screen and (max-width: 375px) {
-  /* SMART PHONE(0-375px) */
+  .download-container {
+    /* mobile(0-375px) */
+  }
+  .download-container .spec-desc {
+    font-size: 13px;
+    margin-top: 30px;
+  }
+  .download-container .spec-desc b {
+    font-size: 15px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1100px) {
+  .download-container .download-logo {
+    margin-top: 50px;
+  }
+  .download-container .download-logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .download-container .download-btn {
+    font-size: 15px;
+    margin: 20px;
+    padding: 5px;
+  }
+  .download-container .spec-desc {
+    font-size: 13px;
+    margin-top: 20px;
+  }
+  .download-container .spec-desc b {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
