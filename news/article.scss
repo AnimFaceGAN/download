@@ -23,12 +23,14 @@
             0% {opacity: 0}
             100% {opacity: 1}}
         .modal-desc {
-            min-height: 70vh;
-        }
-        .modal-desc {
             width: 80%;
+            min-height: 70vh;
             color: rgb(53, 53, 53);
-            text-align: center;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
             .title {
             }
             .date {

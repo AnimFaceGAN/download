@@ -45,13 +45,14 @@
 }
 
 .modal-bg .modal-main .modal-desc {
-  min-height: 70vh;
-}
-
-.modal-bg .modal-main .modal-desc {
   width: 80%;
+  min-height: 70vh;
   color: #353535;
-  text-align: center;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .modal-bg .modal-main .modal-desc .date {
