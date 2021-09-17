@@ -8,9 +8,14 @@
     z-index: 50; // article modal:100   news page:10 
     .logo {
         width: 150px;
+        margin: auto;
+        margin-left: 0;
+        margin-right: 0;
         padding-left: 5px;
-        picture {
-            img {
+        a {
+            .icon-img {
+                display: none;}
+            .logo-img {
                 width: 100%; 
                 height: 100%;}}}
     .nav {
@@ -51,7 +56,7 @@
 @media screen and (max-width: 1100px) {
     /* tablet(541-1100px) */
 }
- @media screen and (max-width: 540px) {
+@media screen and (max-width: 540px) {
     /* mobile(376-540px) */
     .global-header {
         .logo {
@@ -63,28 +68,46 @@
                     width: 80px;
                     font-size: 12px;
                     padding: 16px 2px;}}}}}
- @media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {
     /* mobile(281-375px) */
     .global-header {
         .logo {
             /* icon */
-            width: 50px;}
+            width: 50px;
+            a {
+                .icon-img {
+                    display: block;
+                    width: 85%; 
+                    height: 90%;}
+                .logo-img {
+                    display: none;}}}
         .nav {
             .menu {
                 li a {
-                    width: 60px;
+                    width: 65px;
                     font-size: 8px;
                     padding: 17px 2px;}}}}}
- @media screen and (max-width: 280px) {
+@media screen and (max-width: 280px) {
     /* mobile(0-280px) */
     .global-header {
         .logo {
             /* icon */
             width: 40px;
-            height: 40px;}
+            a {
+                .icon-img {
+                    width: 80%; 
+                    height: 80%;}}}
         .nav {
             .menu {
                 li a {
-                    width: 60px;
-                    font-size: 8px;
-                    padding: 17px 2px;}}}}}
+                    width: 55px;
+                    font-size: 5px;
+                    padding: 17px 3px;}}}}}
+
+/* mobile sideways */
+@media screen and (orientation: landscape) {
+    @media screen and (max-width: 568px) {
+        .global-header {
+            .logo {
+                /* logo */
+                width: 110px;}}}}
