@@ -216,21 +216,71 @@
 /*--------------- NEWS ------------------------------------------------------*/
 .news-container {
    flex: 1;
-   min-height: 100vh;
+   min-height: 90vh;
+   position: relative;
    .news-list {
       width: 60%;
-      min-height: 90vh;
+      min-height: 80vh;
       background-color: rgba(102, 102, 102, 0.404);
+      border-radius: 4px;
       margin: auto;
-      margin-top: 50px;
+      margin-top: 80px;
+      padding-top: 30px;
       text-align: left;
       .a-news {
-         margin: 10px;}}}
+         margin: 25px;
+         a {
+            color: rgb(255, 159, 103);
+            font-weight: 400;}}}
+   
+   @media screen and (max-width: 1100px) {
+      /* tablet(541-1100px) */
+      .news-list {
+         width: 60%;
+         min-height: 80vh;
+         background-color: rgba(102, 102, 102, 0.404);
+         border-radius: 4px;
+         margin: auto;
+         margin-top: 80px;
+         padding-top: 30px;
+         text-align: left;
+         .a-news {
+            margin: 25px;}}}
+   @media screen and (max-width: 540px) {
+      /* mobile(376-540px) */
+      .news-list {
+         width: 80%;
+         margin-top: 60px;
+         padding-top: 20px;
+         .a-news {
+            margin: 15px;}}}
+   @media screen and (max-width: 375px) {
+      /* mobile(0-375px) */
+      .news-list {
+         margin-top: 50px;
+         padding-top: 15px;
+         .a-news {
+            margin: 10px;}}}
+            
+   /* mobile sideways */
+   @media screen and (orientation: landscape) {
+      @media screen and (max-width: 1100px) {
+         /* tablet(541-1100px) */
+         min-height: 90vw;
+         .news-list {
+            min-height: 80vw;}
+         }
+      @media screen and (max-width: 540px) {
+         /* mobile(376-540px) */
+      }
+      @media screen and (max-width: 375px) {
+         /* mobile(0-375px) */
+      }}}
 
 /*--------------- DOWNLOAD --------------------------------------------------*/
 .download-container {
    flex: 1;
-   min-height: 100vh;
+   min-height: 90vh;
    .download-logo {
       margin-top: 100px;
       img {

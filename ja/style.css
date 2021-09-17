@@ -323,20 +323,97 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  min-height: 100vh;
+  min-height: 90vh;
+  position: relative;
+  /* mobile sideways */
 }
 
 .news-container .news-list {
   width: 60%;
-  min-height: 90vh;
+  min-height: 80vh;
   background-color: rgba(102, 102, 102, 0.404);
+  border-radius: 4px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 80px;
+  padding-top: 30px;
   text-align: left;
 }
 
 .news-container .news-list .a-news {
-  margin: 10px;
+  margin: 25px;
+}
+
+.news-container .news-list .a-news a {
+  color: #ff9f67;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1100px) {
+  .news-container {
+    /* tablet(541-1100px) */
+  }
+  .news-container .news-list {
+    width: 60%;
+    min-height: 80vh;
+    background-color: rgba(102, 102, 102, 0.404);
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 80px;
+    padding-top: 30px;
+    text-align: left;
+  }
+  .news-container .news-list .a-news {
+    margin: 25px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .news-container {
+    /* mobile(376-540px) */
+  }
+  .news-container .news-list {
+    width: 80%;
+    margin-top: 60px;
+    padding-top: 20px;
+  }
+  .news-container .news-list .a-news {
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .news-container {
+    /* mobile(0-375px) */
+  }
+  .news-container .news-list {
+    margin-top: 50px;
+    padding-top: 15px;
+  }
+  .news-container .news-list .a-news {
+    margin: 10px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1100px) {
+  .news-container {
+    /* tablet(541-1100px) */
+    min-height: 90vw;
+  }
+  .news-container .news-list {
+    min-height: 80vw;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 540px) {
+  .news-container {
+    /* mobile(376-540px) */
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 375px) {
+  .news-container {
+    /* mobile(0-375px) */
+  }
 }
 
 /*--------------- DOWNLOAD --------------------------------------------------*/
@@ -344,7 +421,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  min-height: 100vh;
+  min-height: 90vh;
   /* mobile sideways */
 }
 

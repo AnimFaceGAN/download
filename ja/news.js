@@ -8,8 +8,12 @@ class News extends HTMLElement {
 
         <div class="news-container">
           <ul class="news-list">  
-            <li class="a-news" data-news="20210915">2021/9/15 : testtesttest</li>
-            <li class="a-news" data-news="20210914">2021/9/14 : testtesttest</li>
+            <li class="a-news">
+              <a href="#" data-article-id="20210915" onclick="openModal(this);">2021/9/15 : testtesttest</a>
+            </li>
+            <li class="a-news">
+              <a href="#" data-article-id="20210914" onclick="openModal(this);">2021/9/14 : testtesttest</a>
+            </li>
           </ul>
         </div>
         `

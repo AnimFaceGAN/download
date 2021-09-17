@@ -8,10 +8,12 @@ function changeNav(obj) {
     }
     else {
         // click selected nav
+        closeModal();
     }
 }
 
 function changePage(obj) {
+    closeModal();
     let mainPartId = document.getElementById('main');
     
     // change state 
@@ -24,7 +26,7 @@ function changePage(obj) {
     currentState = obj;
 
     // change page
-    if(currentState.id == 'land') 
+    if(currentState.id == 'land')
         mainPartId.innerHTML = '<land-page></land-page>';
     else if(currentState.id == 'about') 
         mainPartId.innerHTML = '<about-page></about-page>';

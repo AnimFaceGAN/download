@@ -11,16 +11,19 @@
         <!-- css -->
         <link rel="stylesheet" href="components/default.css">
         <link rel="stylesheet" href="ja/style.css">
+        <link rel="stylesheet" href="news/article.css">
         <!-- components -->
         <script src="components/header.js"></script>
         <script src="components/footer.js"></script>
-        <script src="components/components.js"></script>
         <!-- each pages -->
-        <script src="ja/disp.js"></script>
         <script src="ja/land.js"></script>
         <script src="ja/about.js"></script>
         <script src="ja/news.js"></script>
         <script src="ja/download.js"></script>
+        <!-- js -->
+        <script src="js/components.js"></script>
+        <script src="js/news_manager.js"></script>
+        <script src="js/library.js"></script>
         <!-- jquery -->
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <!-- [if lt IE 9] -->
@@ -34,6 +37,14 @@
 
         <!----- each pages ----->
         <div id="main"></div>
+
+        <!-- hidden modal (use as news modal) -->
+        <div class="modal-bg" id="modal-bg" onclick="closeModal()">
+            <div class="modal-main" id="modal-main" onclick="prohibitCloseModal()">
+                <div class="modal-desc" id="modal-desc"></div>
+                <button class="modal-close-btn" onclick="closeModal()">close</button>
+            </div>
+        </div>   
 
         <!----- footer ----->
         <global-footer></global-footer>

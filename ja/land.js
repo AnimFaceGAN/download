@@ -20,7 +20,7 @@ class Land extends HTMLElement {
                             用意するのは1枚のイラストだけであとはAIにおまかせ.<br>
                             さあ,あなたもVtuber気分を味わおう !
                         </div>
-                        <button class="to-download-btn" onclick="window.open('./download.html','_blank')">windows版のダウンロード</button>
+                        <button class="to-download-btn" onclick="window.open('./download.html','_blank')">ダウンロード</button>
                         <button class="github-btn" onclick="window.open('https://github.com/AnimFaceGAN/Ganimation','_blank')">github</button>
                         <div class="space"></div>
                     </div>
