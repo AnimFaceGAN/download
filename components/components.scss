@@ -8,9 +8,13 @@
     .logo {
         width: 150px;
         padding-left: 5px;
-        .img {
-            width: 100%; 
-            height: 100%;}}
+        picture {
+            source {
+                display: none;
+            }
+            img {
+                width: 100%; 
+                height: 100%;}}}
     .nav {
         .menu {
             align-items: center;
@@ -28,6 +32,7 @@
                 background-color: #0099b2;
             }
             li a {
+                width: 100px;
                 color: rgb(255, 255, 255);
                 display: block;
                 padding: 12px;
@@ -46,19 +51,29 @@
 }
 
 @media screen and (max-width: 1100px) {
-    /* TABLET(541-1100px) */
+    /* tablet(541-1100px) */
 }
  @media screen and (max-width: 540px) {
-    /* SMART PHONE(376-540px) */
+    /* mobile(376-540px) */
     .global-header {
+        .logo {
+            /* logo */
+            width: 90px;}
         .nav {
             .menu {
                 li a {
-                    font-size: 10px;
-                    padding: 16px 2px;}
-            }}}}
+                    width: 80px;
+                    font-size: 12px;
+                    padding: 16px 2px;}}}}}
  @media screen and (max-width: 375px) {
-    /* SMART PHONE(0-375px) */
+    /* mobile(0-375px) */
     .global-header {
         .logo {
-            width: 80px;}}}
+            /* icon */
+            width: 50px;}
+        .nav {
+            .menu {
+                li a {
+                    width: 55px;
+                    font-size: 8px;
+                    padding: 16px 2px;}}}}}

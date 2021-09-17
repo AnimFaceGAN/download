@@ -7,7 +7,12 @@ class Header extends HTMLElement {
 
         <div class="global-header">
             <div class="logo" part="logo">
-                  <a href="#"><img id="land" data-state="inactive" class="img" src="imgs/logo.svg" alt="product icon" onclick="changePage(this);"></a>
+                <a href="#">
+                    <picture id="land" data-state="inactive" onclick="changePage(this);">
+                        <source srcset="imgs/icon.png" media="(max-width: 375px)">　
+                        <img src="imgs/logo.svg" alt="product icon">
+                    </picuture>
+                </a>
             </div>
             <div class="nav">
                 <ul class="menu">
