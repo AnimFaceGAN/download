@@ -4,6 +4,7 @@ class Land extends HTMLElement {
         const shadowRoot = this.attachShadow({ mode: 'open' })
         shadowRoot.innerHTML = `
         <link rel="stylesheet" href="style/css/default.css">
+        <link rel="stylesheet" href="style/css/components.css">
         <link rel="stylesheet" href="style/css/pages.css">
 
         <div class="land-container">
@@ -39,6 +40,9 @@ class Land extends HTMLElement {
                 </div>
             </div>
         </div>
+        
+        <!----- footer ----->
+        <global-footer></global-footer>
         `
     }
   }

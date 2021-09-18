@@ -4,6 +4,7 @@ class About extends HTMLElement {
         const shadowRoot = this.attachShadow({ mode: 'open' })
         shadowRoot.innerHTML = `
         <link rel="stylesheet" href="style/css/default.css">
+        <link rel="stylesheet" href="style/css/components.css">
         <link rel="stylesheet" href="style/css/pages.css">
 
         <div class="about-container">
@@ -56,6 +57,9 @@ class About extends HTMLElement {
               </p>
             </div>
           </div>
+
+          <!----- footer ----->
+          <global-footer></global-footer>
         </div>
         `
     }

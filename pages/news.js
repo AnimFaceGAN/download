@@ -4,6 +4,7 @@ class News extends HTMLElement {
         const shadowRoot = this.attachShadow({ mode: 'open' })
         shadowRoot.innerHTML = `
         <link rel="stylesheet" href="style/css/default.css">
+        <link rel="stylesheet" href="style/css/components.css">
         <link rel="stylesheet" href="style/css/pages.css">
 
         <div class="news-container">
@@ -13,6 +14,9 @@ class News extends HTMLElement {
             </li>
           </ul>
         </div>
+
+        <!----- footer ----->
+        <global-footer></global-footer>
         `
     }
   }

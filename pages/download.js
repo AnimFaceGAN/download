@@ -4,6 +4,7 @@ class Download extends HTMLElement {
         const shadowRoot = this.attachShadow({ mode: 'open' })
         shadowRoot.innerHTML = `
         <link rel="stylesheet" href="style/css/default.css">
+        <link rel="stylesheet" href="style/css/components.css">
         <link rel="stylesheet" href="style/css/pages.css">
 
         <div class="download-container">
@@ -20,6 +21,9 @@ class Download extends HTMLElement {
             <p>ストレージ: 5GB 利用可能</p>
           </div>
         </div>
+
+        <!----- footer ----->
+        <global-footer></global-footer>
         `
     }
   }

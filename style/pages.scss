@@ -1,6 +1,5 @@
 /*--------------- LAND ------------------------------------------------------*/
 .land-container {
-   flex: 1;
    min-height: 100vh;
    .disp-left {
       float: left;
@@ -144,8 +143,6 @@
    
 /*--------------- ABOUT -----------------------------------------------------*/
 .about-container {
-   flex: 1;
-   min-height: 180vh;
    .about-title {
       margin-top: 100px;}
    .feature-block {
@@ -154,7 +151,6 @@
       background-color: rgba(102, 102, 102, 0.7);
       display: flex;
       margin: 80px auto;
-	   transform : translate(0, 50px);
 	   transition : all 500ms;
       .feature-img {
          float: left;
@@ -185,15 +181,12 @@
                font-size: 15px;}}}}
    @media screen and (max-width: 540px) {
       /* mobile(376-540px) */
-      min-height: 220vh;
       .feature-block {
          width: 80%;
          background-color: rgba(255, 255, 255, 0);
-         display: block;
-         margin: auto;
+         display: inline-block;
          .feature-img {
             width: 100%;
-            margin-top: 40px;
             img {
                width: 80%;
                height: 250px;}}
@@ -207,7 +200,6 @@
                text-align: left;}}}}
    @media screen and (max-width: 375px) {
       /* mobile(0-375px) */
-      min-height: 250vh;
       .about-title {
          h1 {
             font-size: 26px;}
@@ -219,19 +211,7 @@
                height: 200px;}}
          .feature-desc {
             b {
-               font-size: 15px;}}}}
-            
-   /* mobile sideways */
-   @media screen and (orientation: landscape) {
-      @media screen and (max-width: 1100px) {
-         /* tablet(541-1100px) */
-         min-height: 180vw;}
-      @media screen and (max-width: 540px) {
-         /* mobile(376-540px) */
-         min-height: 220vw;}
-      @media screen and (max-width: 375px) {
-         /* mobile(0-375px) */
-         min-height: 250vw;}}}
+               font-size: 15px;}}}}}
 
 /*--------------- NEWS ------------------------------------------------------*/
 .news-container {
