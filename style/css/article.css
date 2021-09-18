@@ -58,6 +58,10 @@
   margin-bottom: 10px;
 }
 
+.modal-bg .modal-main .modal-desc .content {
+  word-break: keep-all;
+}
+
 .modal-bg .modal-main .modal-close-btn {
   background-color: rgba(75, 75, 75, 0.829);
   border: none;
