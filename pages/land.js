@@ -10,16 +10,16 @@ class Land extends HTMLElement {
         <div class="land-container">
             <!-- float:left -->
             <div class="disp-left">
-                <div class="gifs">
-                    <img src="imgs/gifs/char1.gif" alt="">
-                    <img src="imgs/gifs/char2.gif" alt="">
-                    <img src="imgs/gifs/char3.gif" alt="">
-                    <img src="imgs/gifs/char4.gif" alt="">
-                    <img src="imgs/gifs/char5.gif" alt="">
-                    <img src="imgs/gifs/char6.gif" alt="">
-                    <img src="imgs/gifs/char7.gif" alt="">
-                    <img src="imgs/gifs/char8.gif" alt="">
-                    <img src="imgs/gifs/char9.gif" class="char9-gif" alt="">
+                <div class="chars">
+                    <video src="imgs/chars/char1.webm" autoplay loop playsinline muted></video>
+                    <video src="imgs/chars/char2.webm" autoplay loop playsinline muted></video>
+                    <video src="imgs/chars/char3.webm" autoplay loop playsinline muted></video>
+                    <video src="imgs/chars/char4.webm" autoplay loop playsinline muted></video>
+                    <video src="imgs/chars/char5.webm" autoplay loop playsinline muted></video>
+                    <video src="imgs/chars/char6.webm" autoplay loop playsinline muted></video>
+                    <video src="imgs/chars/char7.webm" autoplay loop playsinline muted></video>
+                    <video src="imgs/chars/char8.webm" autoplay loop playsinline muted></video>
+                    <video src="imgs/chars/char9.webm" autoplay loop playsinline muted class="char9-video"></video>
                 </div>
             </div>
     

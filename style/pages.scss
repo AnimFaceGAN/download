@@ -9,9 +9,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      .gifs {
+      .chars {
          padding-top: 20px;
-         img {
+         video {
             width: 30%;
             height: 25%;
             filter:contrast(80%)}}}
@@ -71,12 +71,12 @@
          float: none;
          width: 100%;
          min-height: 40vh;
-         .gifs {
+         .chars {
             padding-top: 50px;
-            img {
+            video {
                width: 20%;
                height: 20%;}
-            .char9-gif {
+            .char9-video {
                display: none;}}}
       .disp-right {
          float: none;
@@ -95,9 +95,9 @@
    @media screen and (max-width: 540px) {
       /* mobile(376-540px) */
       .disp-left {
-         .gifs {
+         .chars {
             padding-top: 50px;
-            img {
+            video {
                width: 25%;
                height: 25%;}}}
       .disp-right {
