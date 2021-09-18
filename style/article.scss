@@ -8,8 +8,9 @@
     position: fixed;
     z-index: 100; // header:50  news page:10 
     .modal-main {
-        width: 60%;
-        min-height: 80vh;
+        width: 80%;
+        min-height: 60vh;
+        max-height: 80vh;
         background-color: rgba(230, 230, 230, 0.925);
         border-radius: 7px;
         position: absolute;  
@@ -23,14 +24,19 @@
             0% {opacity: 0}
             100% {opacity: 1}}
         .modal-desc {
-            width: 80%;
-            min-height: 70vh;
+            min-width: 90%;
+            max-width: 95%;
+            min-height: 50vh;
+            max-height: 80vh;
             color: rgb(53, 53, 53);
             top: 5%;
             left: 0;
             right: 0;
             margin: auto;
-            .title {}
+            overflow-y : auto;
+            overflow-wrap: break-word;
+            .title {
+                padding: 20px 0;}
             .date {
                 margin-bottom: 10px;}
             .content {

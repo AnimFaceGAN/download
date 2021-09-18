@@ -12,8 +12,9 @@
 }
 
 .modal-bg .modal-main {
-  width: 60%;
-  min-height: 80vh;
+  width: 80%;
+  min-height: 60vh;
+  max-height: 80vh;
   background-color: rgba(230, 230, 230, 0.925);
   border-radius: 7px;
   position: absolute;
@@ -45,13 +46,21 @@
 }
 
 .modal-bg .modal-main .modal-desc {
-  width: 80%;
-  min-height: 70vh;
+  min-width: 90%;
+  max-width: 95%;
+  min-height: 50vh;
+  max-height: 80vh;
   color: #353535;
   top: 5%;
   left: 0;
   right: 0;
   margin: auto;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+}
+
+.modal-bg .modal-main .modal-desc .title {
+  padding: 20px 0;
 }
 
 .modal-bg .modal-main .modal-desc .date {
