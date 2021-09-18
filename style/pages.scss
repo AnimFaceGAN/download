@@ -231,6 +231,7 @@
       padding-top: 30px;
       text-align: left;
       .a-news {
+         list-style-position: inside;
          margin: 25px;
          a {
             color: rgb(255, 159, 103);
@@ -256,14 +257,21 @@
          margin-top: 60px;
          padding-top: 20px;
          .a-news {
+            font-size: 13px;
             margin: 15px;}}}
    @media screen and (max-width: 375px) {
-      /* mobile(0-375px) */
+      /* mobile(281-375px) */
       .news-list {
          margin-top: 50px;
          padding-top: 15px;
          .a-news {
+            font-size: 10px;
             margin: 10px;}}}
+   @media screen and (max-width: 280px) {
+      /* mobile(0-280px) */
+      .news-list {
+         .a-news {
+            font-size: 8px;}}}
             
    /* mobile sideways */
    @media screen and (orientation: landscape) {

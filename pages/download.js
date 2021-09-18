@@ -3,8 +3,8 @@ class Download extends HTMLElement {
          super()
         const shadowRoot = this.attachShadow({ mode: 'open' })
         shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="style/css/style.css">
         <link rel="stylesheet" href="style/css/default.css">
+        <link rel="stylesheet" href="style/css/pages.css">
 
         <div class="download-container">
           <div class="download-logo">
