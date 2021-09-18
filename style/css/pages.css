@@ -445,10 +445,7 @@
 
 /*--------------- DOWNLOAD --------------------------------------------------*/
 .download-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  min-height: 90vh;
+  min-height: 100vh;
   /* mobile sideways */
 }
 
@@ -486,6 +483,10 @@
 
 .download-container .spec-desc p {
   margin-top: 5px;
+}
+
+.download-container .space {
+  margin: 50px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -547,7 +548,7 @@
   }
   .download-container .spec-desc {
     font-size: 11px;
-    margin-top: 5px;
+    margin-top: 15px;
   }
   .download-container .spec-desc b {
     font-size: 13px;
