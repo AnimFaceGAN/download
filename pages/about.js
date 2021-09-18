@@ -17,7 +17,7 @@ class About extends HTMLElement {
 
           <div class="feature-1 feature-block">
             <div class="feature-img" id="feature-img">
-                <img src="imgs/ticktack_move.gif" alt="feature1 img" loop=infinite>
+                <img src="imgs/feature1.gif" alt="feature1 img" loop=infinite>
             </div>
             <div class="feature-desc" id="feature-desc">
                 <b>必要なものは1枚のイラストだけ</b>
@@ -31,7 +31,7 @@ class About extends HTMLElement {
 
           <div class="feature-2 feature-block">
             <div class="feature-img" id="feature-img">
-                <img src="imgs/ai.png" alt="feature2 img">
+                <img src="imgs/feature2.png" alt="feature2 img">
             </div>
             <div class="feature-desc" id="feature-desc">
               <b>画像生成AI(GAN)の利用</b>
@@ -45,7 +45,7 @@ class About extends HTMLElement {
 
           <div class="feature-3 feature-block">
             <div class="feature-img" id="feature-img">
-                <img src="imgs/home.png" alt="feature3 img">
+                <img src="imgs/feature3.png" alt="feature3 img">
             </div>
             <div class="feature-desc" id="feature-desc">
               <b>ビデオ通話を楽しく</b>

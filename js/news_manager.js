@@ -4,7 +4,6 @@ function openModal(obj) {
     modalBase.style.display = 'block';
     filePath = 'news/' + obj.dataset.articleId + '.html';
     $('#modal-desc').load(filePath);
-    content = getContentFromFile(filePath);
 }
 
 function closeModal() {
@@ -14,7 +13,4 @@ function closeModal() {
 
 function prohibitCloseModal() {
     event.stopPropagation();
-}
-
-function getContentFromFile(path) {
 }
