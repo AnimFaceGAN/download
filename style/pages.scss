@@ -6,11 +6,15 @@
       float: left;
       width: 50%;
       min-height: 100vh;
-      background: url(../../imgs/home.png);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      background-color: rgba(0,0,0,0);}
+      background-color: rgba(0,0,0,0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .gifs {
+         padding-top: 10px;
+         img {
+            width: 30%;
+            height: 30%;}}}
       
    .disp-right {
       float: right;
@@ -83,6 +87,11 @@
             padding-top: 20px;}}}}
    @media screen and (max-width: 540px) {
       /* mobile(376-540px) */
+      .disp-left {
+         .gifs {
+            img {
+               width: 25%;
+               height: 25%;}}}
       .disp-right {
          .product-description {
             .main-description {

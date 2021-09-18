@@ -11,11 +11,25 @@
   float: left;
   width: 50%;
   min-height: 100vh;
-  background: url(../../imgs/home.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   background-color: rgba(0, 0, 0, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.land-container .disp-left .gifs {
+  padding-top: 10px;
+}
+
+.land-container .disp-left .gifs img {
+  width: 30%;
+  height: 30%;
 }
 
 .land-container .disp-right {
@@ -124,6 +138,10 @@
 @media screen and (max-width: 540px) {
   .land-container {
     /* mobile(376-540px) */
+  }
+  .land-container .disp-left .gifs img {
+    width: 25%;
+    height: 25%;
   }
   .land-container .disp-right .product-description .main-description {
     font-size: 20px;

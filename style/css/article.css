@@ -58,8 +58,8 @@
   margin-bottom: 10px;
 }
 
-.modal-bg .modal-main .modal-desc .content {
-  word-break: keep-all;
+.modal-bg .modal-main .modal-desc .content a {
+  word-wrap: break-word;
 }
 
 .modal-bg .modal-main .modal-close-btn {
@@ -95,6 +95,9 @@
   .modal-bg .modal-main {
     width: 80%;
   }
+  .modal-bg .modal-main .modal-desc .content {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -103,6 +106,9 @@
   }
   .modal-bg .modal-main {
     min-height: 90vh;
+  }
+  .modal-bg .modal-main .modal-desc .content {
+    font-size: 11px;
   }
   .modal-bg .modal-main .modal-close-btn {
     padding: 5px 70px;

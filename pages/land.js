@@ -8,7 +8,19 @@ class Land extends HTMLElement {
 
         <div class="land-container">
             <!-- float:left -->
-            <div class="disp-left"></div>
+            <div class="disp-left">
+                <div class="gifs">
+                    <img src="imgs/gifs/char1.gif" alt="">
+                    <img src="imgs/gifs/char2.gif" alt="">
+                    <img src="imgs/gifs/char3.gif" alt="">
+                    <img src="imgs/gifs/char4.gif" alt="">
+                    <img src="imgs/gifs/char5.gif" alt="">
+                    <img src="imgs/gifs/char6.gif" alt="">
+                    <img src="imgs/gifs/char7.gif" alt="">
+                    <img src="imgs/gifs/char8.gif" alt="">
+                    <img src="imgs/gifs/char9.gif" alt="">
+                </div>
+            </div>
     
             <!-- float:right -->
             <div class="disp-right">
