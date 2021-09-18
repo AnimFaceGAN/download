@@ -28,6 +28,7 @@
 }
 
 .global-header .nav .menu {
+  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -44,6 +45,8 @@
 }
 
 .global-header .nav .menu li {
+  position: relative;
+  height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#4d4d4de1), to(#9292928c));
   background: linear-gradient(#4d4d4de1, #9292928c);
   border-left: solid 1px rgba(194, 194, 194, 0.25);
@@ -56,12 +59,21 @@
 
 .global-header .nav .menu li a {
   width: 100px;
+  height: 100%;
   color: white;
   display: block;
-  padding: 12px;
-  position: relative;
   text-align: center;
   text-decoration: none;
+}
+
+.global-header .nav .menu li a span {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .global-footer {

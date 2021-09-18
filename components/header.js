@@ -14,9 +14,9 @@ class Header extends HTMLElement {
             </div>
             <div class="nav">
                 <ul class="menu">
-                    <li id="about"    data-state="inactive" onclick="changeNav(this);"><a href="#">ABOUT</a></li>
-                    <li id="news"     data-state="inactive" onclick="changeNav(this);"><a href="#">NEWS</a></li>
-                    <li id="download" data-state="inactive" onclick="changeNav(this);"><a href="#">DOWNLOAD</a></li>
+                    <li id="about"    data-state="inactive" onclick="changeNav(this);"><a href="#"><span>ABOUT</span></a></li>
+                    <li id="news"     data-state="inactive" onclick="changeNav(this);"><a href="#"><span>NEWS</span></a></li>
+                    <li id="download" data-state="inactive" onclick="changeNav(this);"><a href="#"><span>DOWNLOAD</span></a></li>
                 </ul>
             </div>
         </div>

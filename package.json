@@ -1,7 +1,7 @@
 {
-  "name": "download",
+  "name": "homepage",
   "version": "1.0.0",
-  "description": "url : https://animfacegan.github.io/download/",
+  "description": "url : https://animfacegan.github.io/homepage/",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,13 +9,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.27.5",
-    "gulp": "^4.0.2",
-    "gulp-file-include": "^2.3.0"
-  },
+  "devDependencies": {},
   "dependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^3.5.1",
+    "gulp-changed": "^4.0.3",
     "gulp-cli": "^2.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-plumber": "^1.2.1",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.2",
     "gulp-connect": "^5.7.0",
     "gulp-watch": "^5.0.1"
   }

@@ -1,34 +1,28 @@
-let gulp         = require('gulp');
-let fileinclude  = require('gulp-file-include');
-let connect      = require('gulp-connect');
- 
+const imagemin = require('gulp-imagemin');
+const mozjpeg = require('imagemin-mozjpeg');
+const pngquant = require('imagemin-pngquant');
+const changed = require('gulp-changed');
+
+gulp.task("imagemin", function () {
+  return gulp
+    .src('./imgs/src/**')
+    .pipe(changed('./images/dist'))
+    .pipe(
+      imagemin([
+        pngquant({                // png
+          quality: [.60, .70],
+          speed: 1
+        }),
+        mozjpeg({ quality: 65 }), // jpg
+        imagemin.svgo(),          // svg
+        imagemin.optipng(),
+        imagemin.gifsicle({ optimizationLevel: 3 }) // gif 
+      ])
+    )
+    .pipe(gulp.dest('./images/dist'));
+});
+
+// watch
 gulp.task('default', function() {
-  // place code for your default task here
+  gulp.watch('./imgs/src/**', gulp.task('imagemin'));
 });
- 
-gulp.task('connect', function() {
-  connect.server({
-    root: './',
-    livereload: true
-  });
-});
- 
-gulp.task('html', function () {
-  gulp.src('./*.html')
-    .pipe(connect.reload());
-});
- 
-gulp.task('watch', function () {
-  gulp.watch(['./*.html'], ['html']);
-});
- 
-gulp.task('default', ['connect', 'watch']);
- 
-gulp.task('include', function() {
-	gulp.src(['ja/download.html'])
-	  .pipe(fileinclude({
-		prefix: '@@',
-		basepath: '@file'
-	  }))
-	  .pipe(gulp.dest('out/'));
-  });
