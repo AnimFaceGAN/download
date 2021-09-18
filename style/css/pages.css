@@ -252,15 +252,6 @@
   font-size: 18px;
 }
 
-.about-container .feature-3 .feature-img {
-  background-color: rgba(7, 7, 7, 0.116);
-}
-
-.about-container .feature-3 .feature-img img {
-  width: 80%;
-  height: 90%;
-}
-
 @media screen and (max-width: 1100px) {
   .about-container {
     /* tablet(541-1100px) */
@@ -305,12 +296,6 @@
   .about-container .feature-block .feature-desc p {
     font-size: 13px;
     text-align: left;
-  }
-  .about-container .feature-3 .feature-img {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  .about-container .feature-3 .feature-img img {
-    width: 60%;
   }
 }
 
