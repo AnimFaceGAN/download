@@ -200,6 +200,10 @@
   display: -ms-flexbox;
   display: flex;
   margin: 80px auto;
+  -webkit-transform: translate(0, 50px);
+          transform: translate(0, 50px);
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 .about-container .feature-block .feature-img {

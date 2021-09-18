@@ -136,6 +136,8 @@
       background-color: rgba(102, 102, 102, 0.7);
       display: flex;
       margin: 80px auto;
+	   transform : translate(0, 50px);
+	   transition : all 500ms;
       .feature-img {
          float: left;
          width: 50%;
