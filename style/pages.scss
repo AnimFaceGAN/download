@@ -11,10 +11,11 @@
       justify-content: center;
       align-items: center;
       .gifs {
-         padding-top: 10px;
+         padding-top: 20px;
          img {
             width: 30%;
-            height: 30%;}}}
+            height: 25%;
+            filter:contrast(80%)}}}
       
    .disp-right {
       float: right;
@@ -70,7 +71,14 @@
       .disp-left {
          float: none;
          width: 100%;
-         min-height: 40vh;}
+         min-height: 40vh;
+         .gifs {
+            padding-top: 50px;
+            img {
+               width: 20%;
+               height: 20%;}
+            .char9-gif {
+               display: none;}}}
       .disp-right {
          float: none;
          width: 100%;
@@ -89,6 +97,7 @@
       /* mobile(376-540px) */
       .disp-left {
          .gifs {
+            padding-top: 50px;
             img {
                width: 25%;
                height: 25%;}}}

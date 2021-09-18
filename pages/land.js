@@ -18,7 +18,7 @@ class Land extends HTMLElement {
                     <img src="imgs/gifs/char6.gif" alt="">
                     <img src="imgs/gifs/char7.gif" alt="">
                     <img src="imgs/gifs/char8.gif" alt="">
-                    <img src="imgs/gifs/char9.gif" alt="">
+                    <img src="imgs/gifs/char9.gif" class="char9-gif" alt="">
                 </div>
             </div>
     
