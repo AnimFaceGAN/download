@@ -74,8 +74,7 @@
             .menu {
                 li a {
                     width: 80px;
-                    font-size: 12px;
-                    padding: 16px 2px;}}}}}
+                    font-size: 12px;}}}}}
 @media screen and (max-width: 375px) {
     /* mobile(281-375px) */
     .global-header {
@@ -93,8 +92,7 @@
             .menu {
                 li a {
                     width: 65px;
-                    font-size: 8px;
-                    padding: 17px 2px;}}}}}
+                    font-size: 8px;}}}}}
 @media screen and (max-width: 280px) {
     /* mobile(0-280px) */
     .global-header {
@@ -110,7 +108,7 @@
                 li a {
                     width: 55px;
                     font-size: 5px;
-                    padding: 17px 3px;}}}}}
+                    padding: 0 4px;}}}}}
 
 /* mobile sideways */
 @media screen and (orientation: landscape) {

@@ -98,7 +98,6 @@
   .global-header .nav .menu li a {
     width: 80px;
     font-size: 12px;
-    padding: 16px 2px;
   }
 }
 
@@ -119,7 +118,6 @@
   .global-header .nav .menu li a {
     width: 65px;
     font-size: 8px;
-    padding: 17px 2px;
   }
 }
 
@@ -136,7 +134,7 @@
   .global-header .nav .menu li a {
     width: 55px;
     font-size: 5px;
-    padding: 17px 3px;
+    padding: 0 4px;
   }
 }
 
