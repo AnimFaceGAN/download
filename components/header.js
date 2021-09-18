@@ -3,7 +3,7 @@ class Header extends HTMLElement {
          super()
         const shadowRoot = this.attachShadow({ mode: 'open' })
         shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="components/components.css">
+        <link rel="stylesheet" href="style/css/components.css">
 
         <div class="global-header">
             <div class="logo" part="logo">

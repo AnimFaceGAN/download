@@ -3,8 +3,8 @@ class Land extends HTMLElement {
          super()
         const shadowRoot = this.attachShadow({ mode: 'open' })
         shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="ja/style.css">
-        <link rel="stylesheet" href="components/default.css">
+        <link rel="stylesheet" href="style/css/style.css">
+        <link rel="stylesheet" href="style/css/default.css">
 
         <div class="land-container">
             <!-- float:left -->
