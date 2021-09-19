@@ -20,7 +20,7 @@ class About extends HTMLElement {
             <div class="feature-img" id="feature-img">
               <video class="img" autoplay loop playsinline muted>
                 <source src="imgs/feature1.webm" type="video/webm">
-                <source src="imgs/feture1.mp4" type="video/mp4">
+                <source src="imgs/feature1.mp4" type="video/mp4">
               </video>
             </div>
             <div class="feature-desc" id="feature-desc">
