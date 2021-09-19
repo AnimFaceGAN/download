@@ -8,7 +8,10 @@ class News extends HTMLElement {
         <link rel="stylesheet" href="style/css/pages.css">
 
         <div class="news-container">
-          <ul class="news-list">  
+          <ul class="news-list">
+            <li class="a-news">
+              <a href="#" data-article-id="20210919-1" onclick="openModal(this);">2021/9/19 : 現在発生している不具合</a>
+            </li>  
             <li class="a-news">
               <a href="#" data-article-id="20210918-2" onclick="openModal(this);">2021/9/18 : 技育展に登壇します!!</a>
             </li>

@@ -13,6 +13,8 @@ class Download extends HTMLElement {
             <div>Ganimationのダウンロード</div>
           </div>
           <button class="download-btn" onclick="window.open('https://drive.google.com/drive/folders/1ZPVfz4f4PAbgHfV33CDD0TPmnyapCzX9','_blank')">windows版</button>
+          <p class="download-caution">※インストール先は管理者権限の不要な場所「C:&yen;Users&yen;ユーザー名&yen;??」</p>
+
           <div class="spec-desc">
             <b>必要な外部ソフト</b><br>
             <p>OBS Studio</p>
@@ -26,7 +28,7 @@ class Download extends HTMLElement {
             <p>OS: Windows10 64-bit</p>
             <p>メモリー: 16GB RAM</p>
             <p>GPU: RTX2070super</p>
-            <p>ストレージ: 5GB 利用可能</p>
+            <p>ストレージ: 6GB 利用可能</p>
           </div>
           <div class="space"></div>
         </div>

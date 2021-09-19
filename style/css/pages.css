@@ -476,6 +476,11 @@
   background-color: #0099b2;
 }
 
+.download-container .download-caution {
+  width: 80%;
+  margin: auto;
+}
+
 .download-container .spec-desc {
   font-size: 15px;
   margin-top: 40px;
@@ -515,6 +520,9 @@
     font-size: 13px;
     margin: 20px;
     padding: 5px;
+  }
+  .download-container .download-caution {
+    font-size: 12px;
   }
   .download-container .spec-desc {
     font-size: 16px;
