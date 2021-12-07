@@ -12,7 +12,7 @@ class Download extends HTMLElement {
             <img src="imgs/icon.png" alt="product icon"><br>
             <div>Ganimationのダウンロード</div>
           </div>
-          <button class="download-btn" onclick="window.open('https://drive.google.com/drive/folders/1ZPVfz4f4PAbgHfV33CDD0TPmnyapCzX9','_blank')">windows版</button>
+          <button class="download-btn" onclick="window.open('https://ganimation.booth.pm/items/3419118','_blank')">windows版</button>
           <p class="download-caution">※インストール先は管理者権限の不要な場所「C:&yen;Users&yen;ユーザー名&yen;??」</p>
 
           <div class="spec-desc">
